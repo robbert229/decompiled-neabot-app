@@ -1,0 +1,37 @@
+var ReactNative = require('react-native'),
+  t = ReactNative.Dimensions.get('window'),
+  o = t.width,
+  l = t.height,
+  n = {
+    s5: 5,
+    s8: 8,
+    s10: 10,
+    s16: 16,
+    s20: 20,
+    s30: 30,
+    s40: 40,
+    s50: 50,
+    s60: 60,
+    borderWidth: 0.4,
+    horizontalLineHeight: 1,
+    screenWidth: o < l ? o : l,
+    screenHeight: o < l ? l : o,
+    drawerWidth: 0.8 * o,
+    navBarHeight: 'ios' === ReactNative.Platform.OS ? 64 : 54,
+    buttonRadius: 4,
+    icons: {
+      tiny: 15,
+      small: 20,
+      medium: 30,
+      large: 45,
+      xl: 50,
+    },
+    images: {
+      small: 20,
+      medium: 40,
+      large: 60,
+      logo: 200,
+    },
+  };
+
+exports.default = n;
